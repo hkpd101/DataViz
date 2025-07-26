@@ -21,9 +21,11 @@
 
 <div align="center">
   
-  https://github.com/hkpd101/DataViz/assets/your-username/video.mp4
+  **[📹 Watch Demo Video](./data-visualization/Assets/video.mp4)**
   
   *Full walkthrough of the Steel Production Analytics Dashboard*
+  
+  > Note: Click the link above to download and view the demo video
   
 </div>
 
