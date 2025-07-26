@@ -1,31 +1,166 @@
-# 🏭 Steel Production Analytics Dashboard
+# Steel Production Analytics Dashboard
 
-<div align="center">
-  
-  ![Steel Production Dashboard](./Assets/Screenshot%202025-07-26%20145031.png)
-  
-  [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://your-deployed-app.vercel.app)
-  [![Next.js](https://img.shields.io/badge/Next.js-13.5.6-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-  [![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
-  [![TypeScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)](https://javascript.info/)
-  
-  **A comprehensive real-time monitoring and analytics platform for steel manufacturing operations**
-  
-  [🚀 Live Demo](https://your-deployed-app.vercel.app) • [📖 Documentation](#documentation) • [🛠️ Installation](#installation)
-  
-</div>
+A modern, real-time monitoring and analytics platform for steel manufacturing operations built with Next.js and FastAPI.
+
+![Steel Production Dashboard](./Assets/Screenshot%202025-07-26%20145031.png)
+
+**🔗 [View Full Documentation](../README.md) | [🚀 Live Demo](https://your-deployed-app.vercel.app)**
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 16+ and npm
+- Python 3.8+ (for local backend)
+
+### Development Setup
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Optional: Run local backend**
+   ```bash
+   cd backend
+   python -m venv venv
+   venv\Scripts\activate  # Windows
+   pip install -r requirements-simple.txt
+   python main_simple.py
+   ```
+
+4. **Access the application**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:8000
+
+## 📁 Project Structure
+
+```
+data-visualization/
+├── README.md                 # This file
+├── package.json             # Dependencies and scripts
+├── next.config.js           # Next.js configuration
+├── vercel.json              # Vercel deployment config
+├── backend/                 # FastAPI backend
+│   ├── main_simple.py       # Main backend application
+│   └── requirements-simple.txt
+├── pages/                   # Next.js pages
+│   ├── index.js            # Homepage with dashboard cards
+│   ├── real-time-dashboard.js # Main analytics dashboard
+│   └── api/                # API routes for Vercel
+├── src/                    # React components and utilities
+│   ├── components/         # Reusable React components
+│   ├── hooks/             # Custom React hooks
+│   ├── services/          # API service functions
+│   ├── style/             # Global styles and themes
+│   └── utility/           # Helper functions
+├── public/                # Static assets
+├── datasets/              # Sample CSV data files
+└── Assets/                # Screenshots and demo video
+```
+
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start development server (port 3000)
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🔧 Configuration
+
+### Environment Variables
+Create `.env.local`:
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+NEXT_PUBLIC_WS_URL=ws://localhost:8000
+```
+
+### Vercel Deployment
+- Set **Root Directory** to `data-visualization`
+- Environment variables will be automatically configured for serverless
+
+## 📊 Dashboard Features
+
+### 8 Specialized Views
+1. **Production Control** - Live steel production tracking
+2. **Efficiency Analytics** - Performance optimization metrics
+3. **Quality Assurance** - Material quality standards
+4. **Environmental Monitor** - Sustainability tracking
+5. **Equipment Performance** - Machinery health monitoring
+6. **Production Trends** - Historical analysis & forecasting
+7. **Cost Analysis** - Financial performance tracking
+8. **Executive Summary** - High-level KPI dashboard
+
+### Real-Time Features
+- Live data streaming via WebSocket
+- Interactive charts with Recharts
+- Glass morphism UI design
+- Mobile-responsive layout
+
+## 🎨 Tech Stack
+
+**Frontend:**
+- Next.js 13.5.6
+- React 18
+- Styled Components
+- Recharts for data visualization
+
+**Backend:**
+- FastAPI
+- Python 3.9+
+- WebSocket for real-time data
+
+**Deployment:**
+- Vercel (Frontend + Serverless API)
+- Railway (Backend - optional)
+
+## 🔌 API Integration
+
+### Local Development
+Backend runs on `http://localhost:8000` with endpoints:
+- `GET /` - Health check
+- `GET /api/v1/data/real-time/{data_type}` - Real-time data
+- `WS /ws/{client_id}` - WebSocket connection
+
+### Production (Vercel)
+Uses Next.js API routes in `/pages/api/` for serverless functions.
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Connect GitHub repository
+2. Set root directory to `data-visualization`
+3. Deploy automatically
+
+### Manual Build
+```bash
+npm run build
+npm start
+```
+
+## 🔧 Troubleshooting
+
+**Common Issues:**
+- Ensure Node.js 16+ is installed
+- Check that backend is running on correct port
+- Verify environment variables are set
+- Clear `.next` folder for build issues
+
+**WebSocket Issues:**
+- Check backend CORS settings
+- Verify WebSocket URL in environment
+
+## 📖 Documentation
+
+For comprehensive documentation, screenshots, and deployment guides, see the main [repository README](../README.md).
 
 ---
 
-## 📽️ Demo Video
-
-<div align="center">
-  
-  https://github.com/hkpd101/DataViz/assets/your-username/video.mp4
-  
-  *Full walkthrough of the Steel Production Analytics Dashboard*
-  
-</div>
+**Part of the Steel Production Analytics Dashboard project by Hrithik P Gowda**
 
 ## ✨ Features Overview
 
