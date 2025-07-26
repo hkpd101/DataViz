@@ -16,7 +16,7 @@ import EquipmentPerformanceChart from '../src/components/EquipmentPerformanceCha
 import ProductionComparisonChart from '../src/components/ProductionComparisonChart/ProductionComparisonChart';
 
 // Hooks and Services
-import { useRealTimeData } from '../src/hooks/useRealTimeData';
+import { useRealTimeData } from '../src/hooks/useRealTimeData-vercel';
 import apiService from '../src/services/api';
 
 const DashboardContainer = styled.div`
