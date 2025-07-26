@@ -4,7 +4,7 @@ A modern, real-time monitoring and analytics platform for steel manufacturing op
 
 ![Steel Production Dashboard](./Assets/Screenshot%202025-07-26%20145031.png)
 
-**🔗 [View Full Documentation](../README.md) | [🚀 Live Demo](https://your-deployed-app.vercel.app)**
+**🔗 [View Full Documentation](../README.md) | [🚀 Live Demo](https://data-viz-eight.vercel.app/)**
 
 ## 🚀 Quick Start
 
