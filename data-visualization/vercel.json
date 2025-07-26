@@ -1,6 +1,11 @@
 {
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.9"
+    }
+  },
   "env": {
-    "NEXT_PUBLIC_API_URL": "http://localhost:8000",
-    "NEXT_PUBLIC_WS_URL": "ws://localhost:8000"
+    "NEXT_PUBLIC_API_URL": "",
+    "NEXT_PUBLIC_WS_URL": ""
   }
 }

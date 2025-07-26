@@ -1,0 +1,19 @@
+[build]
+cmd = "npm install && npm run build && cd backend && pip install -r requirements-simple.txt"
+
+[deploy]
+startCommand = "npm start"
+
+[env]
+NODE_ENV = "production"
+PORT = "3000"
+
+[[services]]
+[services.frontend]
+source = "/"
+startCommand = "npm start"
+
+[[services]]
+[services.backend]
+source = "backend/"
+startCommand = "python main_simple.py"
