@@ -21,11 +21,11 @@
 
 <div align="center">
   
-  ### 🎬 **[Watch Full Demo Video](./data-visualization/Assets/video.mp4)** 🎬
+  ![Steel Production Analytics Dashboard Demo](./data-visualization/Assets/video.gif)
   
   *Complete walkthrough of all dashboard features and real-time analytics*
   
-  📥 **Click above to download and view the demo video**
+  🎬 **Interactive demo showing live data visualization and dashboard navigation**
   
 </div>
 
