@@ -21,13 +21,15 @@
 
 <div align="center">
   
-  **[📹 Watch Demo Video](./data-visualization/Assets/video.mp4)**
+  ### 🎬 **[Watch Full Demo Video](./data-visualization/Assets/video.mp4)** 🎬
   
-  *Full walkthrough of the Steel Production Analytics Dashboard*
+  *Complete walkthrough of all dashboard features and real-time analytics*
   
-  > Note: Click the link above to download and view the demo video
+  📥 **Click above to download and view the demo video**
   
 </div>
+
+---
 
 ## ✨ Features Overview
 
