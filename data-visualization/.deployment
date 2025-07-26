@@ -1,0 +1,24 @@
+# Deployment Configuration
+
+## Frontend (Vercel)
+- **Platform**: Vercel
+- **Framework**: Next.js
+- **Build Command**: `npm run build`
+- **Install Command**: `npm install`
+
+## Backend (Railway)
+- **Platform**: Railway
+- **Runtime**: Python 3.9+
+- **Root Directory**: `/backend`
+- **Start Command**: `python main_simple.py`
+
+## Environment Variables Needed
+```
+NEXT_PUBLIC_API_URL=https://your-backend.railway.app
+NEXT_PUBLIC_WS_URL=wss://your-backend.railway.app
+```
+
+## Post-Deployment
+1. Copy Railway backend URL
+2. Update Vercel environment variables
+3. Redeploy frontend on Vercel
